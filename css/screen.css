@@ -107,6 +107,7 @@ h1 {
     margin: 0 0 24px;
     color: #17181A;
     font-family: "Playfair Display", serif;
+
 }
 
 h2 {
@@ -164,7 +165,6 @@ figcaption {
     font-size: 12px;
     line-height: 16px;
     padding-top: 8px;
-    color: Grey;
 }
 
 hr {
@@ -275,7 +275,7 @@ Components: type
 Special typography classes
 */
 
-.c-type-meta{
+.c-type-meta {
     font-size: 14px;
     font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
     line-height: 16px;
@@ -284,14 +284,30 @@ Special typography classes
 .c-author {
     display: flex;
     align-items: center;
+    margin-bottom: 48px;
 }
 
 .c-author__image {
     width: 56px;
     height: 56px;
     border-radius: 100%;
+    margin-right: 16px;
 }
 
-.c-author__caption{
+.c-author__caption {
     padding-top: 0;
+}
+
+.c-author__name {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.c-author__meta {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
+    line-height: 16px;
+    margin-top: 4px;
 }
