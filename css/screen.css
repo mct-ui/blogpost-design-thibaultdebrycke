@@ -1,10 +1,4 @@
 /*
-    Elements: Page
-    ---
-    Default markup for page level elements
-*/
-
-/*
 fonts
 ---
 @font-face declarations
@@ -27,17 +21,20 @@ fonts
     font-weight: 400;
     src: url("../fonts/DroidSerif-Regular-webfont.woff") format("woff");
 }
+
 @font-face {
     font-family: "Droid Serif";
     font-weight: 400;
     font-style: italic;
     src: url("../fonts/DroidSerif-Italic-webfont.woff") format("woff");
 }
+
 @font-face {
     font-family: "Droid Serif";
     font-weight: 700;
     src: url("../fonts/DroidSerif-Bold-webfont.woff") format("woff");
 }
+
 @font-face {
     font-family: "Droid Serif";
     font-weight: 700;
@@ -45,7 +42,11 @@ fonts
     src: url("../fonts/DroidSerif-BoldItalic-webfont.woff") format("woff");
 }
 
-
+/*
+    Elements: Page
+    ---
+    Default markup for page level elements
+*/
 
 html {
     font-size: 16px;
@@ -115,6 +116,7 @@ h2 {
     color: #17181A;
     font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
 }
+
 *+h2 {
     margin-top: 48px;
 }
@@ -265,4 +267,31 @@ a:hover, a:focus {
     h2, h3 {
         page-break-after: avoid;
     }
+}
+
+/*
+Components: type
+---
+Special typography classes
+*/
+
+.c-type-meta{
+    font-size: 14px;
+    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
+    line-height: 16px;
+}
+
+.c-author {
+    display: flex;
+    align-items: center;
+}
+
+.c-author__image {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}
+
+.c-author__caption{
+    padding-top: 0;
 }
