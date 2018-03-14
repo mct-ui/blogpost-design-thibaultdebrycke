@@ -103,6 +103,7 @@ h1 {
     line-height: 40px;
     margin: 0 0 24px;
     color: #17181A;
+    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 
 h2 {
@@ -110,6 +111,7 @@ h2 {
     line-height: 32px;
     margin: 0 0 24px;
     color: #17181A;
+    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 
 h3 {
@@ -117,6 +119,7 @@ h3 {
     line-height: 24px;
     margin: 0 0 24px;
     color: #17181A;
+    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 
 h4, h5, h6 {
