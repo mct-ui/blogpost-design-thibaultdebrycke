@@ -4,10 +4,54 @@
     Default markup for page level elements
 */
 
+/*
+fonts
+---
+@font-face declarations
+*/
+
+@font-face {
+    font-family: "Inter UI";
+    font-weight: 400;
+    src: url("../fonts/Inter-UI-Regular.woff2") format("woff2"), url("../fonts/Inter-UI-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter UI";
+    font-weight: 700;
+    src: url("../fonts/Inter-UI-Bold.woff2") format("woff2"), url("../fonts/Inter-UI-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-weight: 400;
+    src: url("../fonts/DroidSerif-Regular-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Droid Serif";
+    font-weight: 400;
+    font-style: italic;
+    src: url("../fonts/DroidSerif-Italic-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Droid Serif";
+    font-weight: 700;
+    src: url("../fonts/DroidSerif-Bold-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Droid Serif";
+    font-weight: 700;
+    font-style: italic;
+    src: url("../fonts/DroidSerif-BoldItalic-webfont.woff") format("woff");
+}
+
+
+
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    /*font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;*/
+    font-family: "Droid Serif", Georgia, serif;
     color: ##5C6366;
     padding: 48px 24px 24px;
 }
@@ -75,31 +119,21 @@ h3 {
     color: #17181A;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 24px;
 }
 
-p,
-ol,
-ul,
-dl,
-table,
-address,
-figure {
+p, ol, ul, dl, table, address, figure {
     margin: 0 0 24px;
 }
 
-ul,
-ol {
+ul, ol {
     padding-left: 24px;
 }
 
-li ul,
-li ol {
+li ul, li ol {
     margin-bottom: 0;
 }
 
@@ -135,13 +169,11 @@ a {
     transition: all .1s ease-in-out;
 }
 
-a:visited,
-a:active {
+a:visited, a:active {
     color: #00e6a1;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
     color: #1abaff;
 }
 
@@ -177,9 +209,7 @@ a:focus {
 */
 
 @media print {
-    *,
-    *:before,
-    *:after {
+    *, *:before, *:after {
         background: transparent !important;
         color: #000 !important;
         /* Black prints faster:
@@ -187,8 +217,7 @@ a:focus {
         box-shadow: none !important;
         text-shadow: none !important;
     }
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
     a[href]:after {
@@ -201,15 +230,13 @@ a:focus {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
     pre {
         white-space: pre-wrap !important;
     }
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
@@ -220,18 +247,14 @@ a:focus {
     thead {
         display: table-header-group;
     }
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
